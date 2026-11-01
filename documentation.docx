@@ -1,0 +1,230 @@
+Dr. D. Y. Patil Educational Federation's
+Dr. D. Y. Patil College of Engineering & Innovation
+Approved by AICTE, Recognized by Govt. of Maharashtra
+(An Autonomous Institute Affiliated to Savitribai Phule Pune University)
+Accredited by NAAC with "A" Grade
+Department of Artificial Intelligence & Machine Learning
+ 
+Student Details
+ 
+Name of Student: Prathmesh Vasant Bhoyate
+Program: Artificial Intelligence & Machine Learning
+Class / Div / Batch: SY Btech / B / B1
+PRN No: 251112067
+Roll No: 32206
+Course: AI-ML
+ 
+
+
+ 
+SMARTBRIDGE  |  SKILLWALLET
+SaveIQ: Smart Savings OS – AI-Powered Personal Finance Dashboard
+
+Project Description :-
+SaveIQ is a modern personal finance dashboard that helps users track savings goals, monitor transactions, understand their financial progress and receive AI-powered financial insights. It brings savings missions, transaction management, analytics and an AI financial copilot together in one focused, responsive interface.
+The application is a React single-page app built with Vite. A built-in AI Financial Copilot, powered by the Gemini API, reviews the user’s savings progress, goals and recent transactions and turns them into practical next actions shown directly inside the dashboard. Savings missions and transactions are stored in the browser’s localStorage, so the user’s data persists between sessions without needing an account.
+The project is hosted on Vercel and its source code is maintained on GitHub.
+GitHub Repository:
+https://github.com/vedantsakhare/SaveIQ
+Live URL (Vercel): [add your Vercel deployment link here]
+Problem Statement & Objectives :-
+Problem Statement: Many people find personal finance hard to understand and act on. Savings goals are scattered across notes and apps, spending is rarely reviewed, and generic budgeting advice does not reflect a person’s real progress. Users need one simple, free tool that shows where they stand against their goals and tells them what to do next.
+The main objectives of the project are:
+• Provide a financial dashboard that shows key savings indicators (KPIs) at a glance.
+• Let users create Savings Missions and track progress towards each goal.
+• Allow users to add and manage transactions so spending and saving behaviour stays visible.
+• Present financial analytics that make progress easy to understand.
+• Offer AI-generated insights covering progress, risks and practical next actions.
+• Persist user data in the browser and provide profile and settings management.
+• Deploy the application on a public cloud platform (Vercel) so it works on any desktop or mobile device.
+Technology & AI :-
+Frontend: React with JavaScript, built and served with Vite
+Styling: CSS (App.css) with a modern, fintech-inspired responsive design
+Icons: Lucide React
+Intelligence: Gemini API, accessed through an API-based integration; the AI Financial Copilot analyses savings progress, goals, recent transactions, savings behaviour and risks
+Data Storage: Browser localStorage for savings missions and transactions
+Configuration: Environment variable GEMINI_API_KEY kept in a local .env file (never committed)
+Code Quality: ESLint (eslint.config.js)
+Version Control: Git and GitHub
+Deployment: Vercel
+System Architecture :-
+SaveIQ follows a client-centred architecture. The React application runs in the browser and handles presentation, state management and local persistence. When the user asks for financial insights, the app calls the Gemini API through an API layer so the secret key is not exposed in the interface code. Vercel hosts both the static build and the serverless API route.
+Layer
+Component
+Responsibility
+Presentation
+Home, Profile, Settings, StepGuide components; App.css
+Dashboard, KPIs, missions, transactions, analytics, profile, settings and onboarding guide
+Application logic
+App.jsx, main.jsx
+Routing between views, application state, and reading and writing localStorage
+AI layer
+api/ folder, Gemini API
+Builds the financial summary and returns AI insights to the dashboard
+Storage
+Browser localStorage
+Persists savings missions and transactions between sessions
+Hosting
+Vercel
+Builds with Vite, serves the app over HTTPS and runs the API route
+Request Flow
+• Step 1: The user opens the Vercel URL and the React app loads from the Vite build.
+• Step 2: The app reads saved missions, transactions and profile data from localStorage.
+• Step 3: The user creates a savings mission or adds a transaction; the state updates and the data is written back to localStorage.
+• Step 4: The dashboard KPIs and analytics recalculate and re-render immediately.
+• Step 5: When AI insights are requested, the app sends the savings progress, goals and recent transactions to the AI layer.
+• Step 6: The Gemini API returns an analysis, which is displayed inside the application as actionable guidance.
+Project Structure :-
+File / Folder
+Description
+package.json, package-lock.json
+Project metadata, dependencies and the npm scripts (dev, build)
+vite.config.js
+Vite build and development server configuration
+index.html
+Entry HTML page that mounts the React application
+src/main.jsx, src/App.jsx
+Application entry point and root component with the main layout and state
+src/App.css
+Global styling for the fintech-inspired responsive interface
+src/components/Home.jsx
+Main dashboard: KPIs, savings missions, transactions, analytics and AI insights
+src/components/Profile.jsx
+User profile management
+src/components/Settings.jsx
+Application settings
+src/components/StepGuide.jsx
+Step-by-step guide that helps new users get started
+api/
+Serverless API layer used for the AI integration
+public/
+Static assets served as-is
+eslint.config.js, .gitignore, README.md
+Lint rules, ignore rules (node_modules, .env) and project documentation
+Key Features :-
+• Financial dashboard with savings KPIs
+• Savings Missions with progress tracking
+• Transaction management
+• Financial analytics
+• AI-powered financial insights through the AI Financial Copilot
+• User profile management and application settings
+• Persistent browser storage using localStorage
+• Responsive interface for desktop and mobile
+• Modern fintech-inspired user interface
+• API-based AI integration with the key kept in environment variables
+Module Description :-
+1. Dashboard (Home)
+The Home component is the main working area. It shows the savings KPIs, the list of Savings Missions, recent transactions, the analytics view and the AI insights panel, so the user sees their whole financial position on one screen.
+2. Savings Missions
+A Savings Mission is a savings goal. The user creates a mission and tracks progress towards it. Progress is shown visually and feeds into the dashboard KPIs and the AI analysis. Missions are stored in localStorage.
+3. Transaction Management
+Users record and manage transactions. The transaction history keeps spending and saving behaviour visible and is used for the analytics and for the AI Copilot’s review of recent activity. Transactions are stored in localStorage.
+4. Financial Analytics
+The analytics module summarises savings progress and transaction activity so users can understand trends and how close they are to their goals.
+5. AI Financial Copilot
+The AI Financial Copilot evaluates six areas and presents the result inside the application:
+• Savings progress
+• Financial goals
+• Recent transactions
+• Savings behaviour
+• Potential risks
+• Practical next actions
+The Gemini API key is supplied through the GEMINI_API_KEY environment variable and must never be committed to GitHub.
+6. Profile and Settings
+The Profile component manages user details and the Settings component manages application preferences. A StepGuide component walks first-time users through the main steps of using SaveIQ.
+Scenarios :-
+Scenario 1: A student creates a Savings Mission for a laptop, adds a few transactions and watches the dashboard KPIs and mission progress update immediately.
+Scenario 2: A user records several spending transactions and opens Analytics to see how their activity compares with their savings goals.
+Scenario 3: A user requests AI insights and receives an assessment of progress, risks and practical next actions based on their goals and recent transactions.
+Scenario 4: A returning user closes the browser and comes back later; missions and transactions are restored from localStorage.
+Milestones :-
+Milestone 1 – Project Planning & UI/UX Design
+Define the goal of SaveIQ, finalize the dashboard, missions, transactions, analytics and AI modules, and design the fintech-inspired interface.
+Milestone 2 – Frontend Development
+Set up React with Vite and build the Home, Profile, Settings and StepGuide components with responsive CSS and Lucide icons.
+Milestone 3 – Core Features & Persistence
+Implement Savings Missions, transaction management and analytics, with data saved in localStorage.
+Milestone 4 – AI Integration
+Integrate the Gemini API through the API layer to power the AI Financial Copilot, with the key stored in environment variables.
+Milestone 5 – Testing, Optimization & Deployment
+Test the features on desktop and mobile, run lint and build checks, and deploy the final application on Vercel.
+Deployment on Vercel :-
+SaveIQ is deployed on Vercel from the GitHub repository, so a push to the main branch can trigger a new deployment.
+Live URL (Vercel): [add your Vercel deployment link here]
+• Step 1: Push the SaveIQ project to a GitHub repository.
+• Step 2: On Vercel, choose Add New > Project and import the repository.
+• Step 3: Vercel detects the Vite framework; the Build Command is “npm run build”.
+• Step 4: Add the GEMINI_API_KEY environment variable in the project settings.
+• Step 5: Click Deploy. Vercel builds the project and publishes it over HTTPS.
+• Step 6: Open the URL, create a mission, add a transaction and test the AI insights.
+Running Locally
+Command
+Purpose
+git clone https://github.com/vedantsakhare/SaveIQ.git
+Download the project
+cd SaveIQ
+Open the project folder
+npm install
+Install dependencies
+npm run dev
+Start the Vite development server
+npm run build
+Create the production build
+For local AI features create a .env file with GEMINI_API_KEY=your_api_key_here.
+Testing & Results :-
+The table lists the main test cases for SaveIQ, the behaviour expected from each, and the project feature or README-documented behaviour that the expectation is based on.
+No.
+Test Case
+Expected Result
+Basis in Project
+1
+Create a new Savings Mission
+Mission appears and its progress is tracked
+Savings Missions with progress tracking
+2
+Add a transaction
+Transaction appears in the list and the analytics update
+Transaction management and financial analytics
+3
+Refresh the browser
+Missions and transactions are restored
+Data persistence with localStorage
+4
+Request AI insights
+Analysis of progress, risks and next actions is displayed
+AI Financial Copilot using the Gemini API
+5
+Edit profile and settings
+Changes are saved and shown in the interface
+Profile and Settings components
+6
+View on a phone and a laptop
+Layout adapts to both screen sizes
+Responsive interface for desktop and mobile
+7
+Run npm run build
+Production build is created for deployment
+Build for production (Vite)
+Security & Limitations :-
+Security measures: The Gemini API key is held in an environment variable, .env files are excluded from the repository through .gitignore, and Vercel serves the app over HTTPS.
+The current limitations are:
+• Data is stored in browser localStorage, so it is limited to one browser and device and is lost if the browser data is cleared.
+• There is no user authentication yet, so the app is single-user per browser.
+• AI insights depend on the Gemini API being available and on a valid API key.
+• AI output is guidance only and is not professional financial advice.
+• Charts are basic; advanced financial charts are planned.
+• Transactions are entered manually; recurring transactions are not automated yet.
+Future Scope :-
+• Advanced financial charts
+• User authentication
+• Cloud database synchronization across devices
+• Automated recurring transactions
+• Budget categories
+• Exportable financial reports
+• Notifications and goal reminders
+• More advanced AI financial planning
+Conclusion :-
+SaveIQ turns personal finance into something simple to understand, track and act on. By combining savings missions, transaction tracking, analytics and an AI Financial Copilot in a responsive React dashboard deployed on Vercel, the project demonstrates frontend development, application state management, responsive UI design, API integration and AI-powered features. Its modular component structure leaves clear room for authentication, cloud sync and richer AI planning.
+Expected Outcome :-
+SaveIQ aims to help everyday users build better saving habits by giving them clear visibility of their goals and spending, plus actionable AI guidance, from any device through a public link.
+GitHub: https://github.com/vedantsakhare/SaveIQ
