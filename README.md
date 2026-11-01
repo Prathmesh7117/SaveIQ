@@ -3,10 +3,11 @@
 SaveIQ is a modern personal finance dashboard designed to help users track savings goals, monitor transactions, understand financial progress, and receive AI-powered financial insights.
 
 🌐 Live Demo
+🚀 **Project Documentation:**
 
-🚀 Live Website: https://save-iq.vercel.app
+[📄 Click Here to View SaveIQ Project Report](SaveIQ_Project_Report_Prathmesh_Bhoyate.docx)
 
-**[Download / View Complete Project Documentation (DOCX)](https://github.com/Prathmesh7117/SaveIQ/raw/refs/heads/main/SaveIQ_Project_Report_Prathmesh_Bhoyate.docx)**
+🌐 **Live Demo:** https://save-iq.vercel.app/
 
 Deployment: Successfully deployed using Vercel.
 
