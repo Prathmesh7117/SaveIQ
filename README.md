@@ -8,65 +8,44 @@ Production: Deployed with Vercel
 
 ✨ Features
 
-📊 Financial dashboard with savings KPIs
-
-🎯 Savings Missions with progress tracking
-
-💰 Transaction management
-
-📈 Financial analytics
-
-🤖 AI-powered financial insights
-
-👤 User profile management
-
-⚙️ Application settings
-
-💾 Persistent browser storage with localStorage
-
-📱 Responsive interface for desktop and mobile
-
-🎨 Modern fintech-inspired UI
-
-🔐 API-based AI integration
+* 📊 Financial dashboard with savings KPIs
+* 🎯 Savings Missions with progress tracking
+* 💰 Transaction management
+* 📈 Financial analytics
+* 🤖 AI-powered financial insights
+* 👤 User profile management
+* ⚙️ Application settings
+* 💾 Persistent browser storage with localStorage
+* 📱 Responsive interface for desktop and mobile
+* 🎨 Modern fintech-inspired UI
+* 🔐 API-based AI integration
 
 🛠️ Tech Stack
 
-React
-
-JavaScript
-
-Vite
-
-CSS
-
-Lucide React
-
-Gemini API
-
-Vercel
-
-GitHub
+* React
+* JavaScript
+* Vite
+* CSS
+* Lucide React
+* Gemini API
+* Vercel
+* GitHub
 
 🧠 AI Financial Copilot
 
 SaveIQ includes an AI-powered financial analysis layer that evaluates:
 
-Savings progress
-
-Financial goals
-
-Recent transactions
-
-Savings behavior
-
-Potential risks
-
-Practical next actions
+* Savings progress
+* Financial goals
+* Recent transactions
+* Savings behavior
+* Potential risks
+* Practical next actions
 
 The AI analysis is presented directly inside the application so users can turn financial data into actionable insights.
 
 📁 Project Structure
+
 src/
 ├── components/
 │   ├── Home.jsx
@@ -78,17 +57,22 @@ src/
 └── main.jsx
 
 ⚡ Getting Started
+
 1. Clone the repository
-git clone https://github.com/vedantsakhare/SaveIQ.git
+
+git clone https://github.com/Prathmesh7117/SaveIQ.git
 cd SaveIQ
 
 2. Install dependencies
+
 npm install
 
 3. Start the development server
+
 npm run dev
 
 4. Build for production
+
 npm run build
 
 🔑 Environment Variables
@@ -99,8 +83,7 @@ Example:
 
 GEMINI_API_KEY=your_api_key_here
 
-
-Never commit real API keys to GitHub.
+Note: Never commit real API keys to GitHub.
 
 💾 Data Persistence
 
@@ -116,24 +99,25 @@ The application combines financial tracking, goal management, analytics, and AI 
 
 🔮 Future Improvements
 
-Advanced financial charts
-
-User authentication
-
-Cloud database synchronization
-
-Automated recurring transactions
-
-Budget categories
-
-Exportable financial reports
-
-Notifications and goal reminders
-
-More advanced AI financial planning
+* Advanced financial charts
+* User authentication
+* Cloud database synchronization
+* Automated recurring transactions
+* Budget categories
+* Exportable financial reports
+* Notifications and goal reminders
+* More advanced AI financial planning
 
 👨‍💻 Author
 
-Vedant Sakhare
+Prathmesh Bhoyate
 
-Built as a modern React-based fintech project demonstrating frontend development, application state management, responsive UI design, API integration, and AI-powered features.
+GitHub: @Prathmesh7117
+
+Project: SaveIQ
+
+Built by Prathmesh Bhoyate as a modern React-based fintech project demonstrating frontend development, application state management, responsive UI design, API integration, and AI-powered financial features.
+
+⸻
+
+⭐ If you like this project, consider giving it a star on GitHub!
